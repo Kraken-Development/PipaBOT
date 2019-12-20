@@ -1,6 +1,6 @@
 ## Branch BETA para funciones y comandos aún no lanzados
 
-#### Para acceder a viejas versiones de PipaBOT (1.1.3<) ve al viejo repositorio: [Gato-Landia/PipaBOT](https://github.com/Gato-Landia/PipaBOT)
+#### Para acceder a viejas versiones de PipaBOT (<1.1.3) ve al viejo repositorio: [Gato-Landia/PipaBOT](https://github.com/Gato-Landia/PipaBOT)
 ------------------------------------------------
 Comandos:
 ------------------------------------------------
