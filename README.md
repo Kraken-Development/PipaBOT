@@ -1,142 +1,144 @@
-**PipaBOT es un bot multifuncional de código libre creado por Blox y GatoLandia bajo la licencia GPL v3.0, programado con JavaScript en node.js**
+## PipaBOT es un bot multifuncional de código libre creado por Blox y GatoLandia bajo la licencia GPL v3.0, programado con JavaScript en node.js
+
+#### Para acceder a viejas versiones de PipaBOT (1.1.3<) ve al viejo repositorio: [Gato-Landia/PipaBOT](https://github.com/Gato-Landia/PipaBOT)
+
 ------------------------------------------------
 Comandos:
 ------------------------------------------------
 
 
-**pp!pipa**
+* **pp!pipa**
 
-Muestra una imagen de un loro aleatorio
+  Muestra una imagen de un loro aleatorio
 
 
-**pp!hola**
+* **pp!hola**
 
-Pipa te saluda
+  Pipa te saluda
 
 
-**pp!piedra/pp!papel/pp!tijeras**
+* **pp!piedra/pp!papel/pp!tijeras**
 
-Inicias una ronda de Piedra, papel o tijeras contra Pipa
+  Inicias una ronda de Piedra, papel o tijeras contra Pipa
 
 
-**pp!siono**
+* **pp!siono**
 
-Di una pregunta de si o no, Pipa te la responderá
+  Di una pregunta de si o no, Pipa te la responderá
 
 
-**pp!repite**
+* **pp!repite**
 
-Pipa repitirá lo que digas
+  Pipa repitirá lo que digas
 
+* **pp!invite**
 
-**pp!invite**
+  Pipa enviará un link para invitar al bot a cualquier servidor
 
-Pipa enviará un link para invitar al bot a cualquier servidor
 
+* **pp!ping**
 
-**pp!ping**
+  Mira tu ping (ms)!
 
-Mira tu ping (ms)!
 
+* **pp!kick [Nombre] [Razón]**
 
-**pp!kick [Nombre] [Razón]**
+  Kickea a una persona del servidor
 
-Kickea a una persona del servidor
 
+* **pp!ban [Nombre] [Razón]**
 
-**pp!ban [Nombre] [Razón]**
+  Banea a una persona del servidor
 
-Banea a una persona del servidor
 
+* **pp!borrar [Número de mensajes]**
 
-**pp!borrar [Número de mensajes]**
+  Borra un determinado número de mensajes en el canal
 
-Borra un determinado número de mensajes en el canal
 
+* **pp!serverinfo**
 
-**pp!serverinfo**
+  Muestra información del servidor
 
-Muestra información del servidor
 
+* **pp!userinfo [Nombre]**
 
-**pp!userinfo [Nombre]**
+  Muestra información del usuario indicado
 
-Muestra información del usuario indicado
 
+* **pp!avatar [Nombre]**
 
-**pp!avatar [Nombre]**
+  Muestra el avatar de la persona elegida, si no se especifica se muestra tu avatar
 
-Muestra el avatar de la persona elegida, si no se especifica se muestra tu avatar
 
+* **pp!play [URL]**
 
-**pp!play [URL]**
+  Reproduce el URL indicado
 
-Reproduce el URL indicado
 
+* **pp!stop**
 
-**pp!stop**
+  Detiene la reproducción del URL y sale del canal de voz
 
-Detiene la reproducción del URL y sale del canal de voz
 
+* **pp!searchsp [Búsqueda]**
 
-**pp!searchsp [Búsqueda]**
+  Busca en Spotify
 
-Busca en Spotify
 
+* **pp!searchgl [Búsqueda]**
 
-**pp!searchgl [Búsqueda]**
+  Busca en Google
 
-Busca en Google
 
+* **pp!searchyt [Búsqueda]**
 
-**pp!searchyt [Búsqueda]**
+  Busca en YouTube
 
-Busca en YouTube
 
+* **pp!wallpaper-1366x768/1280x720/1280x800/1920x1080/4k**
 
-**pp!wallpaper-1366x768/1280x720/1280x800/1920x1080/4k**
+  Muestra un wallpaper aleatorio dependiendo de tu resolución
 
-Muestra un wallpaper aleatorio dependiendo de tu resolución
 
+* **pp!suma [Números]**
 
-**pp!suma [Números]**
+  Realiza una operación de suma desde 2 a 5 números diferentes
 
-Realiza una operación de suma desde 2 a 5 números diferentes
 
+* **pp!resta [Números]**
 
-**pp!resta [Números]**
+  Realiza una operación de resta desde 2 a 5 números diferentes
 
-Realiza una operación de resta desde 2 a 5 números diferentes
 
+* **pp!multiplicacion [Números]**
 
-**pp!multiplicacion [Números]**
+  Realiza una operación de multiplicación desde 2 a 5 números diferentes
 
-Realiza una operación de multiplicación desde 2 a 5 números diferentes
 
+* **pp!division [Números]**
 
-**pp!division [Números]**
+  Realiza una operación de multiplicación desde 2 a 5 números diferentes
 
-Realiza una operación de multiplicación desde 2 a 5 números diferentes
 
+* **pp!f-to-c [Fahrenheit]**
 
-**pp!f-to-c [Fahrenheit]**
+  Convierte de F° a C°
 
-Convierte de F° a C°
 
+* **pp!c-to-f [Celsius]**
 
-**pp!c-to-f [Celsius]**
+  Convierte de C° a F°
 
-Convierte de C° a F°
 
+* **pp!roll**
 
-**pp!roll**
+  Tira un dado
 
-Tira un dado
 
+* **pp!whatsnew**
 
-**pp!whatsnew**
-
-Lista de los ultimos cambios en la actualización
+  Lista de los ultimos cambios en la actualización
 
 ------------------------------------------------
 
