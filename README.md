@@ -1,6 +1,6 @@
 ## Funciones de la versión 1.1.4 de PipaBOT
 
-#### Para acceder a viejas versiones de PipaBOT (1.1.3<) ve al viejo repositorio: [Gato-Landia/PipaBOT](https://github.com/Gato-Landia/PipaBOT)
+#### Para acceder a viejas versiones de PipaBOT (<1.1.3) ve al viejo repositorio: [Gato-Landia/PipaBOT](https://github.com/Gato-Landia/PipaBOT)
 ------------------------------------------------
 Comandos:
 ------------------------------------------------
