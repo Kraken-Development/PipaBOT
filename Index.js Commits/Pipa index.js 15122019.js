@@ -23,7 +23,7 @@ client.once('ready', () => {
   client.user.setPresence({
     status: "online",
     game: {
-        name: "pb!help / Versión 1.1.4",
+        name: "pp!help / Versión 1.1.4",
         type: "LISTENING",
     },
 });
