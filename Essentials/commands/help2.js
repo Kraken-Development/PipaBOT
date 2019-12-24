@@ -17,6 +17,8 @@ module.exports = {
         .addField("pp!f-to-c [Fahrenheit]", "Convierte de F° a C°")
         .addField("pp!c-to-f [Celsius]", "Convierte de C° a F°")
         .addField("pp!roll", "Tira un dado")
+      .addField("pp!fogata", ":christmas_tree: Manda un gif de una fogata :christmas_tree:")
+      .addField("pp!recetas", ":christmas_tree: Manda una lista de recetas navideñas :christmas_tree:")
         .addField("pp!whatsnew", "Lista de los ultimos cambios en la actualización")
       .addField("pp!??????????????", "Comando secreto! Checa pp!whatsnew para pistas")
         .setFooter("Page 2 of 2");
