@@ -29,6 +29,12 @@ module.exports = {
         case 17: embed.setImage("https://farm66.staticflickr.com/65535/48595966097_9f96072077_b.jpg"); break;
         case 18: embed.setImage("https://i2.bssl.es/faunatura/2011/11/amazona-loro.jpg"); break;
         case 19: embed.setImage("https://www.hogarmania.com/archivos/201105/loro-amazonas-xl-668x400x80xX.jpg"); break;
+        case 20: embed.setImage("http://www.casadelave-tiendaonline.com/1156-large_default/loro-amazonas-aestiva-criado-a-mano.jpg"); break;
+        case 21: embed.setImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsflLTrsaXTve0p8aBC_shNV5x80pkmpborz_qaddXewLFLAOsGw&s"); break;
+        case 22: embed.setImage("https://i.pinimg.com/originals/7e/d4/d9/7ed4d902e1977d0555880d25d6100c57.jpg"); break;
+        case 23: embed.setImage("http://www.ecoregistros.org/site/images/dataimages/2017/11/24/230031/papagaioverdadeiro.JPG"); break;
+        case 24: embed.setImage("https://live.staticflickr.com/4664/25267466397_b96d45051b_b.jpg"); break;
+        case 25: embed.setImage("https://www.freebirds.com.ar/321_368/366/Hablador_Mnes_IMG-(6171).jpg"); break;
       }
       message.channel.send(embed);
     },
