@@ -4,7 +4,7 @@ module.exports = {
     aliases: ['loro', 'pipi'],
     description: 'Pipa',
     execute(message) {
-        let respuestas = 19;
+        let respuestas = 25;
       let randomR = Math.floor(Math.random() * (respuestas + 1 - 1)) + 1;
     const embed = new Discord.RichEmbed();
       embed.setColor("#74FF00");
