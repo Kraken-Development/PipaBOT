@@ -1,3 +1,6 @@
+//  ALL COMMANDS AND THEIR CONTENT WILL BE IN SPANISH
+//  TODOS LOS COMANDOS Y SU CONTENIDO ESTARÁ EN ESPAÑOL
+//  LOS COMANDOS SE ENCUENTRAN EN GITHUB: PipaBOT/Essentials/Commands
 const Discord = require('discord.js');
 const { prefix } = require('./config.json');
 const fs = require('fs');
