@@ -6,12 +6,11 @@ module.exports = {
       const embed = new Discord.RichEmbed()
         .setColor("#74FF00")
         .setTitle(`Lista de cambios:`)
-        .setDescription("Versión 1.1.4")
-      .addField("Se añadió:", "roll\n searchsp\n whatsnew")
-      .addField("Se reparó:", "userinfo")
-      .addField("Se modificó:", "ctof\n ftoc\n searchgl\n searchgl\n searchyt\n suma\n resta\n division\n multiplicacion")
-      .addField("Se actualizó:", "help\n help2")
+        .setDescription("Versión 1.1.5")
+      .addField("Se añadió:", "fogata\n recetas")
+      .addField("Se actualizó:", "help2\n pipa")
       .addField("Se aplicó:", "Esencia de pipa");
       message.channel.send(embed);
     },
 };
+
