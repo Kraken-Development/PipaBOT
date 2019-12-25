@@ -1,4 +1,4 @@
-## PipaBOT es un bot multifuncional de código libre creado por Blox y GatoLandia bajo la licencia GPL v3.0, programado con JavaScript en node.js
+## Funciones de la versión 1.1.5 de PipaBOT
 
 #### Para acceder a viejas versiones de PipaBOT (<1.1.3) ve al viejo repositorio: [Gato-Landia/PipaBOT](https://github.com/Gato-Landia/PipaBOT)
 
