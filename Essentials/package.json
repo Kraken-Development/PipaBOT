@@ -1,0 +1,30 @@
+{
+    "name": "PipaEnglish",
+    "version": "1.0.0",
+    "description": "Pipa is a multifunctional bot programmed by Blox and GatoLandia",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "discord.js": "^11.5.1",
+      "ffmepg": "^1.0.2",
+      "node-opus": "^0.3.2",
+      "opus-encode": "^2.0.2",
+      "opusscript": "0.0.7",
+      "ytdl-core": "^1.0.6"
+    },
+    "engines": {
+      "node": "10.x"
+    },
+    "repository": {
+      "url": "https://github.com/Kraken-Development/PipaBOT"
+    },
+    "license": "GPL v3.0",
+    "keywords": [
+      "node",
+      "glitch",
+      "express"
+    ]
+  }
