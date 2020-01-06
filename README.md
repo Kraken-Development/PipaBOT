@@ -1,4 +1,4 @@
-#### Branch master is in spanish, to see the english version go to en-master or to an stable version
+#### Branch master is in spanish, to see the english version go to en-master or to an en-stable version
 
 ## PipaBOT es un bot multifuncional de código libre creado por Blox y GatoLandia bajo la licencia GPL v3.0, programado con JavaScript en node.js
 
