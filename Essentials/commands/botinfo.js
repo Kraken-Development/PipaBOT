@@ -7,7 +7,7 @@ module.exports = {
       .setColor('RANDOM')
         .setTitle(`Information about the bot:`)
         .addField("Created by:", "Kraken Development")
-        .addField("Version:", "1.0.0")
+        .addField("Version:", "1.0.1 (Patch 1)")
         .addField("Repository:", "https://github.com/Kraken-Development/PipaBOT")
         .addField("Language:", "English (Also available in spanish)")
       message.channel.send(embed);

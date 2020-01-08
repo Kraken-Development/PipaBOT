@@ -5,12 +5,13 @@ module.exports = {
     execute(message, args) {
       
       if(!args[0]) {
-      if(message.channel.type != 'dm') message.channel.send("Check your messages!") 
+      if(message.channel.type != 'dm') message.react('✅')
       
       const embed = new Discord.RichEmbed()
         .setThumbnail("https://cdn.discordapp.com/attachments/474331584447643658/647640189379936276/Sin_titulo.png")
         .setColor("#74FF00")
       .setTitle("List of available commands")
+      .setDescription("To get more info about a command, type\n `pip!help [Command name]`")
       .addField("▬MODERATION▬", "`pip!ban`\n`pip!kick`\n`pip!prune`")
       .addField("▬INFORMATION▬", "`pip!serverinfo`\n`pip!userinfo`\n`pip!botinfo`\n`pip!avatar`\n`pip!invite`\n`pip!ping`\n`pip!whatsnew`")
       .addField("▬SEARCH▬", "`pip!searchgl`\n`pip!searchyt`\n`pip!searchsp`")
@@ -19,11 +20,13 @@ module.exports = {
       .addField("▬FUN▬", "`pip!hi`\n`pip!rock/paper/scissors`\n`pip!yesorno`\n`pip!say`\n`pip!roll`\n`pip!parrot`")
       .addField("▬MUSIC▬", "`pip!play`\n`pip!stop`");
         message.author.send(embed);
-      message.author.send("To get more info about a command, type `pip!help [Command name]`");
       } else {
       
       let commandName = args[0];
       
+        if(args[0] == '[Command' && args[1] == 'name]') {
+          message.channel.send("Haha very funny...")
+        }
         if(args[0] == 'ban') {
           message.channel.send("Bans an user in the server (You must have the BAN MEMBERS permission)");
           message.channel.send("Usage: pip!ban [Name] [Reason]");
@@ -70,27 +73,27 @@ module.exports = {
         }
         if(args[0] == 'searchyt') {
           message.channel.send("Search in YouTube");
-          message.channel.send("Usage: pip!searchgl [Search]");
+          message.channel.send("Usage: pip!searchyt [Search]");
         }
         if(args[0] == 'searchsp') {
           message.channel.send("Search in Spotify");
-          message.channel.send("Usage: pip!searchgl [Search]");
+          message.channel.send("Usage: pip!searchsp [Search]");
         }
         if(args[0] == 'plus') {
           message.channel.send("Makes a sum equation from 2 to 5 numbers");
-          message.channel.send("Usage: pip!plus [Number] [Number]");
+          message.channel.send("Usage: pip!plus [Numbers]");
         }
         if(args[0] == 'minus') {
           message.channel.send("Makes a subtraction equation from 2 to 5 numbers");
-          message.channel.send("Usage: pip!minus [Number] [Number]");
+          message.channel.send("Usage: pip!minus [Numbers]");
         }
         if(args[0] == 'multiplication') {
           message.channel.send("Makes a multiplication equation from 2 to 5 numbers");
-          message.channel.send("Usage: pip!multiplication [Number] [Number]");
+          message.channel.send("Usage: pip!multiplication [Numbers]");
         }
         if(args[0] == 'division') {
           message.channel.send("Makes a division equation from 2 to 5 numbers");
-          message.channel.send("Usage: pip!division [Number] [Number]");
+          message.channel.send("Usage: pip!division [Numbers]");
         }
         if(args[0] == 'f-to-c') {
           message.channel.send("Converts from Fahrenheit to Celsius");
@@ -134,7 +137,7 @@ module.exports = {
         }
         if(args[0] == 'say') {
           message.channel.send("Pipa repeats what you say (Of course he will, he\'s a parrot)");
-          message.channel.send("Usage: pip!say [Text]");
+          message.channel.send("Usage: pip!say [Message]");
         }
         if(args[0] == 'roll') {
           message.channel.send("Roll a dice!");
