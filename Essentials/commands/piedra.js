@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 module.exports = {
-    name: 'Piedra',
+    name: 'piedra',
     execute(message) {
         let respuestas = 3;
           let randomR = Math.floor(Math.random() * (respuestas + 1 - 1)) + 1;
