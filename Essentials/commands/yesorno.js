@@ -8,7 +8,7 @@ module.exports = {
       if(!texto) return message.reply("Ask me anything!");
           let randomR = Math.floor(Math.random() * (respuestas + 1 - 1)) + 1;
      const embed = new Discord.RichEmbed();
-          embed.setTitle(`Si o no`);
+          embed.setTitle(`Yes or no`);
           embed.setColor("RANDOM");
           switch(randomR) {
             case 1: embed.addField("Obviously", "Yes") ; break;
