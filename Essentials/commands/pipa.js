@@ -1,8 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'pipa',
-    aliases: ['loro', 'pipi'],
-    description: 'Pipa',
+    aliases: ['loro', 'loros'],
     execute(message) {
         let respuestas = 25;
       let randomR = Math.floor(Math.random() * (respuestas + 1 - 1)) + 1;

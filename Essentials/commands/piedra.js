@@ -1,17 +1,16 @@
 const Discord = require('discord.js');
 module.exports = {
-    name: 'piedra',
-    description: 'eliges piedra',
+    name: 'Piedra',
     execute(message) {
         let respuestas = 3;
           let randomR = Math.floor(Math.random() * (respuestas + 1 - 1)) + 1;
      const embed = new Discord.RichEmbed();
-          embed.setTitle(`Piedra,Papel o Tijeras`);
+          embed.setTitle(`Elegiste piedra`);
           embed.setColor("RANDOM");
           switch(randomR) {
-            case 1: embed.addField("Tijeras:", "Perdi") ; break;
-                 case 2: embed.addField("Piedra", "Empate") ; break;
-                 case 3: embed.addField("Papel:", "Gane") ; break;            
+            case 1: embed.addField("Elegí tijeras:", "Perdí") ; break;
+                 case 2: embed.addField("Elegí piedra", "Empate") ; break;
+                 case 3: embed.addField("Elegí papel:", "Gané") ; break;            
           }
           message.channel.send(embed);
     },

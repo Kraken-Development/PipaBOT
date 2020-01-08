@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'resta',
-    aliases: ['restar'],
+    aliases: ['menos'],
     execute: async (message, args) => {
       let n1 = parseInt(args[0]);
     let n2 = parseInt(args[1]);
@@ -59,7 +59,7 @@ module.exports = {
     .setColor("RANDOM");
     message.channel.send(embed);
     } else{
-      message.channel.send('No se pueden hacer ecuaciones de más de 5 números');
+      message.channel.send('No puedes hacer ecuaciones de más de 5 números');
     }
     },
 };
