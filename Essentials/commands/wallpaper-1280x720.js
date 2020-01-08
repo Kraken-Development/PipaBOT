@@ -1,13 +1,12 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'wallpaper-1280x720',
-    description: 'sends a random 1280x720 wallpaper',
     execute(message) {
         let respuestas = 12;
     const embed = new Discord.RichEmbed();
     let randomR = Math.floor(Math.random() * (respuestas + 1 - 1)) + 1;
     embed.setColor("RANDOM")
-    .setTitle("He elegido este wallpaper para ti :heart:");
+    .setTitle("Elegí este wallpaper para tí :heart:");
     switch(randomR) {
       case 1: embed.setImage("http://paranoidandroid.co/assets/wallpapers/2018/submerged_desktop_thumb.jpg") ; break;
         case 2: embed.setImage("https://i.pinimg.com/originals/09/2a/32/092a324d78ed61e2e2dc13ec21e10b4b.jpg") ; break;

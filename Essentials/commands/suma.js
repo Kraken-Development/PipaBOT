@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'suma',
-    aliases: ['sumar'],
+    aliases: ['mas'],
     execute: async (message, args) => {
       let n1 = parseInt(args[0]);
     let n2 = parseInt(args[1]);
-    if(!n1 || !n2) return message.channel.send('Debes ingresar al menos 2 números');
+    if(!n1 || !n2) return message.channel.send('Debes ingresar al menos 2 números (0 no es un número válido)');
     if(!args[2]) {
     let resultado = n1 + n2;
     
@@ -58,7 +58,7 @@ module.exports = {
     .setColor("RANDOM");
     message.channel.send(embed);
     } else{
-      message.channel.send('No se pueden hacer ecuaciones de más de 5 números');
+      message.channel.send('No puedes hacer ecuaciones de más de 5 números');
     }
     },
 };

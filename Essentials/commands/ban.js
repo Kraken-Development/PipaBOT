@@ -1,30 +1,29 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'ban',
-	description: 'just an avatar',
+  guildOnly: true,
 	execute(message, args) {
-		const mencionado = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-        const razon = args.join(' ').slice(22);
+		const userDiscord = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+        const reason = args.join(' ').slice(22);
     
-        if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply("No tienes suficientes permisos para usar este comando");
-        if(!mencionado) return message.reply("No se ha podido encontrar el usuario");
-        if(mencionado.hasPermission("BAN_MEMBERS")) return message.reply("Su nivel de administrador es mayor a 9000, no puedo banearlo");
-        if(!razon) return message.reply("Debes añadir una razón");
+        if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply("No tienes suficientes permisos para ejecutar este comando");
+        if(!userDiscord) return message.reply("Usuario no encontrado");
+        if(userDiscord.hasPermission("BAN_MEMBERS")) return message.reply(`El nivel de admin de ${userDiscord.user.username} es de más de 9000!`);
+        if(!reason) return message.reply("Debes ingresar una razón");
         
         const embed = new Discord.RichEmbed()
         .setTitle("**BAN**")
         .setColor("RANDOM")
-        .addField("Usuario baneado:", `${mencionado}`)
+        .addField("Usuario baneado:", `${userDiscord}`)
         .addField("Baneado por:", `${message.author.username}`)
         .addField("Canal:", message.channel)
-        .addField("Hora:", message.createdAt)
-        .addField("Razón:", razon);
+        .addField("Día:", message.createdAt)
+        .addField("Razón:", reason);
     
         let logs = message.guild.channels.find(`name`, "logs");
-        if(!logs) return message.channel.send("No encuentro el canal de logs por ningún lado :eyes:");
+        if(logs) logs.send(embed);
     
-        message.guild.member(mencionado).ban(razon);
-        logs.send(embed);
-        message.channel.send(`${message.author.username} acaba de hacer **La Jugada de La Partida**, baneando a ${mencionado.user.username}. Para más información ve a ${logs}`);
+        message.guild.member(userDiscord).ban(reason);
+        message.channel.send(`${message.author.username} acaba de hacerse la JUGADA DE LA PARTIDA baneando a ${userDiscord.user.username}`);
 	},
 };

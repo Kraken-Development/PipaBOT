@@ -2,25 +2,24 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: 'userinfo',
+  guildOnly: true,
     aliases: ['user-info'],
     execute(message) {
-        let estados = {
+        let status = {
         "online": "Online",
         "offline": "Offline",
         "idle": "Ausente",
         "dnd": "No molestar",
 
     };
-    let mencionado = message.mentions.members.first() || message.member;
+    let userDiscord = message.mentions.members.first() || message.member;
     const embed = new Discord.RichEmbed()
-    .setAuthor(`Información de: ${mencionado.user.username}`)
-    .setThumbnail(mencionado.user.displayAvatarURL)
+    .setAuthor(`Información de: ${userDiscord.user.username}`)
+    .setThumbnail(userDiscord.user.displayAvatarURL)
     .setColor("RANDOM")
-    .addField("Username:", `${mencionado.user.tag}`)
-    .addField("Entró en:", mencionado.joinedAt.toDateString(), true)
-    .addField("ID:", `${mencionado.id}`)
-    .addField("Estado:", `${estados[mencionado.presence.status]}`)
-    .addField("Roles:", `${mencionado.roles.map(m => m).join("**-**")}`);
+    .addField("Usuario:", `${userDiscord.user.tag}`)
+    .addField("Se unió al servidor el:", userDiscord.joinedAt.toDateString(), true)
+    .addField("Estado:", `${status[userDiscord.presence.status]}`)
     message.channel.send(embed);
     }, 
 };

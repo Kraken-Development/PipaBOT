@@ -1,14 +1,14 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'roll',
-    aliases: ['roll6', 'roll-6'],
+    aliases: ['roll6', 'roll-6', 'roll-dice', 'rolldice', 'dado'],
     execute: async (message, args) => {
       const embed = new Discord.RichEmbed;
       function tirar() { 
         let caras = 6;
         let randomR = Math.floor(Math.random() * (caras + 1 - 1)) + 1;
         embed.setColor('#9e1818');
-        embed.setAuthor(`Dado tirado por ${message.author.username}`);
+        embed.setAuthor(`${message.author.username} tiró un dado`);
         embed.setTitle('El dado cayó en:');
         switch(randomR) {
           case 1: embed.setImage('https://cdn.discordapp.com/attachments/654106991626813453/655844861563371530/dado-1.png'); break;

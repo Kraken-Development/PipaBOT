@@ -2,13 +2,12 @@ const Discord = require('discord.js');
 module.exports = {
     name: 'wallpaper-4k',
     aliases: ['wallpaper-3840x2160'],
-    description: 'sends a random 4k wallpaper',
     execute(message) {
       let respuestas = 14
     const embed = new Discord.RichEmbed()
     let randomR = Math.floor(Math.random() * (respuestas + 1 - 1)) + 1;
     embed.setColor("RANDOM")
-    .setTitle("He elegido este wallpaper para ti :heart:")
+    .setTitle("Elegí este wallpaper para tí :heart:")
     switch(randomR) {
       case 1: embed.setImage("https://i.ibb.co/cwMcNZP/wallpapersden-com-small-memory-3840x2160.jpg") ; break;
         case 2: embed.setImage("https://wallpaperaccess.com/full/7310.jpg") ; break;

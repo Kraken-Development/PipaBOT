@@ -1,14 +1,13 @@
 const ytdl = require('ytdl-core');
 module.exports = {
     name: 'play',
-    description: 'play music',
     execute: async (message, args) => {
         if(!message.member.voiceChannel) return message.channel.send('No estás conectado a un canal de voz');
-        if(message.guild.me.voiceChannel) return message.channel.send('Ya estoy conectado en un canal de voz');
-        if(!args[0]) return message.channel.send('Debes ingresar una URL de Youtube');
+        if(message.guild.me.voiceChannel) return message.channel.send('Ya estoy conectado a un canal de voz');
+        if(!args[0]) return message.channel.send('Debes ingresar una URL de YouTube');
 
         let validate = await ytdl.validateURL(args[0]);
-        if(!validate) return message.channel.send(':x: URL no válida :x:');
+        if(!validate) return message.channel.send(':x: URL inválido :x:');
 
         let info = await ytdl.getInfo(args[0]);
 

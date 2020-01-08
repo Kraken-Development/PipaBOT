@@ -9,9 +9,9 @@ module.exports = {
     if(!searchYTQ) return message.channel.send('Ingresa lo que deseas buscar');
     const embed = new Discord.RichEmbed()
           .setThumbnail('https://freepngimg.com/download/youtube/77697-logo-computer-youtube-icons-download-hd-png.png')
-    .setDescription(`Busqueda realizada por **${message.author.username}**`)
-    .setTitle('(YouTube) Buscaste ' + searchQTitleYT)
-    .addField("https://www.youtube.com/" + searchYTE, "Cliquea la página para ver su contenido")
+    .setDescription(`Search made by **${message.author.username}**`)
+    .setTitle('(YouTube) You searched ' + searchQTitleYT)
+    .addField("https://www.youtube.com/" + searchYTE, "Click the link to see its content")
     .setColor("RANDOM");
     message.channel.send(embed);
     },
